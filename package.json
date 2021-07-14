@@ -1,0 +1,25 @@
+{
+  "name": "typescript-exercises",
+  "version": "1.0.0",
+  "description": "The goal: Let everyone play with many different TypeScript features and get an overview of TypeScript capabilities and principles.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThiagoMoraes21/typescript-exercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThiagoMoraes21/typescript-exercises/issues"
+  },
+  "homepage": "https://github.com/ThiagoMoraes21/typescript-exercises#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  }
+}
