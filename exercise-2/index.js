@@ -42,7 +42,7 @@ exports.persons = [
     }
 ];
 function logPerson(user) {
-    console.log(" - " + user.name + ", " + user.age);
+    console.log(` - ${user.name}, ${user.age}`);
 }
 exports.logPerson = logPerson;
 exports.persons.forEach(logPerson);

@@ -29,7 +29,7 @@ exports.users = [
     }
 ];
 function logPerson(user) {
-    console.log(" - " + user.name + ", " + user.age);
+    console.log(` - ${user.name}, ${user.age}`);
 }
 exports.logPerson = logPerson;
 console.log('Users:');

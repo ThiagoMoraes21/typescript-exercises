@@ -40,14 +40,14 @@ exports.persons = [
     }
 ];
 function logPerson(person) {
-    var additionalInformation;
+    let additionalInformation;
     if ('role' in person) {
         additionalInformation = person.role;
     }
     else {
         additionalInformation = person.occupation;
     }
-    console.log(" - " + person.name + ", " + person.age + ", " + additionalInformation);
+    console.log(` - ${person.name}, ${person.age}, ${additionalInformation}`);
 }
 exports.logPerson = logPerson;
 exports.persons.forEach(logPerson);
