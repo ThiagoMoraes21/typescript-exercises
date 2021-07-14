@@ -43,7 +43,7 @@ function logPerson(person) {
 exports.logPerson = logPerson;
 console.log('Admins:');
 exports.persons.filter(isAdmin).forEach(logPerson);
-console.log('-'.repeat(10));
+console.log('-'.repeat(50));
 console.log('Users:');
 exports.persons.filter(isUser).forEach(logPerson);
 // In case if you are stuck:
