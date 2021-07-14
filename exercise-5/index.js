@@ -1,24 +1,24 @@
 "use strict";
 /*
 
-Intro:
+    Intro:
 
-    Time to filter the data! In order to be flexible
-    we filter users using a number of criteria and
-    return only those matching all of the criteria.
-    We don't need Admins yet, we only filter Users.
+        Time to filter the data! In order to be flexible
+        we filter users using a number of criteria and
+        return only those matching all of the criteria.
+        We don't need Admins yet, we only filter Users.
 
-Exercise:
+    Exercise:
 
-    Without duplicating type structures, modify
-    filterUsers function definition so that we can
-    pass only those criteria which are needed,
-    and not the whole User information as it is
-    required now according to typing.
+        Without duplicating type structures, modify
+        filterUsers function definition so that we can
+        pass only those criteria which are needed,
+        and not the whole User information as it is
+        required now according to typing.
 
-Higher difficulty bonus exercise:
+    Higher difficulty bonus exercise:
 
-    Exclude "type" from filter criterias.
+        Exclude "type" from filter criterias.
 
 */
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -73,6 +73,10 @@ function logPerson(person) {
     console.log(` - ${person.name}, ${person.age}, ${additionalInformation}`);
 }
 exports.logPerson = logPerson;
+/*
+    Partial<Type>
+        Constructs a type with all properties of Type set to optional.
+*/
 function filterUsers(persons, criteria) {
     return persons.filter(exports.isUser).filter((user) => {
         const criteriaKeys = Object.keys(criteria);
